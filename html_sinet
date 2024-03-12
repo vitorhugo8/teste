@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinet Página Inicial</title>
+</head>
+<style>
+    body {
+        background-color: aquamarine;
+    }
+    header {
+        text-align: left;
+        font-size: 30px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    h3 {
+        text-align: right;
+        font-size: 15px;
+        font-style: italic;
+    }
+</style>
+<body>
+    <h1>
+        Seja bem vindo a Sinet!
+    </h1>
+    <h2>
+        A sua melhor opção para tênis de corrida
+    </h2>
+    <img src="pessoa-correndo.png" alt="Pessoas_Correndo" width="700" height="350"> <!--Centralizar imagem da mulher correndo-->
+    <h1>
+        Promoção do Dia
+    </h1>
+    <h2>
+        70% de Desconto no novo modelo Estácio! Dê seus primeiros passos na maior universidade do Brasil
+    </h2>
+    <img src="tênis.png" alt="Tênis da Estácio" width="500" height="350">
+    <header>
+        <ul>
+            <li>
+                <a href="Vitrine.html" target="_blank" rel="next">Vitrine</a>
+            </li>
+            <li>
+                <a href="Opinion.html" target="_blank" rel ="next">Opiniões dos Clientes</a>
+            </li>
+            <li>
+                <a href="Faturamento.html" target="_blank" rel="next">Faturamento</a>
+            </li>
+        </ul>
+    </header>
+    <h1>
+        Confira nossos Produtos: <!--Aqui, os tênis vão aparecer como num carrosel-->
+    </h1>
+    <img src="tênis.png" alt="Tênis01" width="150" height="100" >
+    <img src="tênis.png" alt="Tênis02" width="150" height="100">
+    <h2>
+        Saiba escolher o seu calçado para a corrida perfeita:
+    </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A90UBM61xx4?si=U-3Y3MjrCRcsAzwN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

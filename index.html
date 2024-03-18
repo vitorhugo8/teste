@@ -3,67 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinet Página Inicial</title>
+    <title>Página Oficial sineT</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0; 
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            font-size: 25px;
+            text-align: center;
+        }
+        
+        li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        header {
+            text-align: center;
+            font-size: 19px;
+            margin-bottom: 20px;
+        }
+        
+        main {
+            text-align: center;
+            margin: 0 auto; 
+            width: 80%;
+        }
+
+        .banner {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(50% - 10px);
+            margin: 0 5px; 
+            padding: 20px;
+            border: 3px solid white;
+            border-radius: 5px;
+            text-decoration: none;
+            color: inherit;
+            box-sizing: border-box;
+        }
+
+        .banner:hover {
+            background-color: whitesmoke;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto; 
+            max-width: 100%;
+            margin-bottom: 10px; 
+        }
+
+        .banner h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .banner p {
+            font-size: 15px;
+            margin: 0; 
+        }
+
+        footer {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 20px;
+            background-color: bisque;
+        }
+
+        #div_busca {
+            background-color: bisque;
+            border: solid 1px;
+            border-radius: 15px;
+            width: 300px;
+        }
+
+        #txtBusca {
+            float: left;
+            background-color: transparent;
+            padding-left: 5px;
+            font-style: verdana;
+            font-size: 18px;
+            border: none;
+            height: 32px;
+            width: 260px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: aquamarine;
-    }
-    header {
-        text-align: left;
-        font-size: 30px;
-    }
-    h1 {
-        text-align: center;
-        font-size: 70px;
-    }
-    h2 {
-        font-size: 25px;
-        text-align: center;
-    }
-    h3 {
-        text-align: right;
-        font-size: 15px;
-        font-style: italic;
-    }
-</style>
 <body>
+
+<!--Cabeçalho-->
+<header>
     <h1>
-        Seja bem vindo a Sinet!
+        Seja Bem Vindo a sineT
     </h1>
     <h2>
-        A sua melhor opção para tênis de corrida
+        A sua melhor opção para Tênis de Corrida
     </h2>
-    <img src="pessoa-correndo.png" alt="Pessoas_Correndo" width="700" height="350"> <!--Centralizar imagem da mulher correndo-->
+    <!--Futuramente, adiconar programação para a Pesquisa levar diretamente para a "Vitrine"-->
+    <div id="div_busca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <img src="https://cdn-icons-png.flaticon.com/512/64/64673.png" width="10" height="10" div="btnBusca" alt="Buscar"/>
+    </div>
+    <br>
+    <img src="https://img.freepik.com/fotos-gratis/ homem-de-vista-lateral-pulando-ao-ar-livre_23-2149557835.jpg"  width="950" height="520" alt="Free-pessoa-correndo">
+
+</header>
+
+<!--Barra de Navegação-->
+<nav>
+    <ul>
+        <li>
+            <a href="Vitrine.html" target="_blank" rel="next">🛍️ Vitrine</a>
+        </li>
+        <li>
+            <a href="https://github.com/vitorhugo8/teste" target="_blank" rel="next">😺 GitHub</a>
+        </li>
+    </ul>
+</nav>
+
+<!--Barra Lateral e Pesquisa-->
+<sidebar>
+    <!--Adicionar tênis da Estácio-->
+    <a href="Vitrine.html" target="_blank" rel="next" class="banner">
+    <img src="tênis.png" alt="Tênis-Estácio">
+        <div>
+            <h3>Promoção do Dia</h3>
+            <p>50% de Desconto no novo modelo Estácio! Dê seus primeiros passos na melhor universidade do Brasil</p>
+            </div>
+        </a>
+</sidebar>
+
+<!--Conteúdo Principal-->
+<main>
     <h1>
-        Promoção do Dia
+        Escolha o tênis perfeito para a sua necessidade
     </h1>
-    <h2>
-        70% de Desconto no novo modelo Estácio! Dê seus primeiros passos na maior universidade do Brasil
-    </h2>
-    <img src="tênis.png" alt="Tênis da Estácio" width="500" height="350">
-    <header>
-        <ul>
-            <li>
-                <a href="Vitrine.html" target="_blank" rel="next">Vitrine</a>
-            </li>
-            <li>
-                <a href="Opinion.html" target="_blank" rel ="next">Opiniões dos Clientes</a>
-            </li>
-            <li>
-                <a href="Faturamento.html" target="_blank" rel="next">Faturamento</a>
-            </li>
-        </ul>
-    </header>
-    <h1>
-        Confira nossos Produtos: <!--Aqui, os tênis vão aparecer como num carrosel-->
-    </h1>
-    <img src="tênis.png" alt="Tênis01" width="150" height="100" >
-    <img src="tênis.png" alt="Tênis02" width="150" height="100">
-    <h2>
-        Saiba escolher o seu calçado para a corrida perfeita:
-    </h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/A90UBM61xx4?si=U-3Y3MjrCRcsAzwN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <a href="Vitrine.html" target="_blank" rel="next" class="banner">
+        <img src="https://images.tcdn.com.br/img/img_prod/1025063/tenis_adidas_originals_superstar_foundation_18437_1_d707bdeced6a0fae066ffd55409e0acb.jpg" alt="TênisX">
+        <div>
+            <h3>Adidas</h3>
+            <p>R$ 230,00</p>
+        </div>
+    </a>
     
+    <a href="Vitrine.html" target="_blank" rel="next" class="banner">
+        <img src="https://cdn.awsli.com.br/600x1000/1562/1562559/produto/20202993700cf103d3e.jpg" alt="TênisX">
+        <div>
+            <h3>Puma</h3>
+            <p>R$ 320,00</p>
+        </div>
+    </a>
+   
+    <a href="Vitrine.html" target="_blank" rel="next" class="banner">
+        <img src="https://cdn.awsli.com.br/257/257889/produto/144384433/209ad97b1b.jpg" alt="TênisX">
+        <div>
+            <h3>Nike Air Jordan</h3>
+            <p>R$ 499,90</p>
+        </div>
+    </a>
+
+    <a href="Vitrine.html" target="_blank" rel="next" class="banner">
+        <img src="https://images.tcdn.com.br/img/img_prod/1080411/asics_tenis_running_m_gel_shogun5_1011b714_1409225045_1_ee3eb634e4f7e1062bd261f184589c57.jpg" alt="TênisX">
+        <div>
+            <h3>Asics Gel</h3>
+            <p>R$ 399,80</p>
+        </div>
+    </a>
+
+    <a href="Vitrine.html" target="_blank" rel="next" class="banner">
+        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa/global/391025/02/fnd/BRA/w/1000/h/1000/fmt/png" alt="TênisX">
+        <div>
+            <h3>Puma Slipstream</h3>
+            <p>R$ 199,50</p>
+        </div>
+    </a>
+
+</main>
+<section>
+    <h1>
+        Saiba escolher o melhor tênis para corrida
+    </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A90UBM61xx4?si=U-3Y3MjrCRcsAzwN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br>
+</section>
+
+<!--Nota de Rodapé-->
+<footer>
+    <p>
+        Diferente de uma loja de calçados convencional, a sineT está interessada no seu conforto, por isso, nosso catálogo está entre os melhores do País. Obrigado por escolher a sineT, e esperamos que volte sempre!
+    </p>
+    <address>
+        A sineT é uma <strong>loja online fictícia.</strong>Todos os produtos e interações representadas aqui são puramente para fins acadêmicos.
+    </address>
+</footer>
 </body>
 </html>
